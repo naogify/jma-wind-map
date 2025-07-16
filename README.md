@@ -1,5 +1,6 @@
 # jma-wind-map
 
+![スクリーンショット 2025-07-16 22 57 07](https://github.com/user-attachments/assets/66ff21e4-4aeb-440f-ba8e-5f74ed26240a)
 
 気象庁のGPVデータをRGBエンコーディングしたPNGに変換し、可視化するサンプルです。
 
@@ -13,10 +14,6 @@
 - データが存在しない部分は**Aチャンネル（アルファ）を0**にしています。
 - 詳細仕様は [weatherlayers-gl公式ドキュメント](https://docs.weatherlayers.com/weatherlayers-gl/data-sources#supported-data-types) および [データフォーマット](https://docs.weatherlayers.com/weatherlayers-gl/data-sources#supported-data-formats) を参照してください。
 
-
-
-## デモ
-![スクリーンショット 2025-07-16 22 57 07](https://github.com/user-attachments/assets/66ff21e4-4aeb-440f-ba8e-5f74ed26240a)
 
 ## サンプルコード
 
