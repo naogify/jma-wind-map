@@ -63,3 +63,10 @@ npm run dev
 
 ## データ出典
 [気象庁「全球数値予報モデルGPV (GSM全球域)」](https://www.data.jma.go.jp/developer/gpv_sample.html)を加工して作成
+
+## 参考
+このプロジェクトは以下のプロジェクトに触発されて作られました
+
+- https://github.com/Kanahiro/japan-windmap-example
+- https://github.com/shiwaku/japan-windmap-example
+
