@@ -1,6 +1,13 @@
 # weather-map
 
+
 気象庁のGPVデータをRGBエンコーディングしたPNGに変換し、可視化するサンプルです。
+
+## 風データPNGのエンコーディングについて
+- 風速データ（U, V成分）をPNG画像にエンコードしています。
+- **RチャンネルにU成分、GチャンネルにV成分**を割り当てています。
+- データが存在しない部分は**Aチャンネル（アルファ）を0**にしています。
+- 詳細仕様は [weatherlayers-gl公式ドキュメント](https://docs.weatherlayers.com/weatherlayers-gl/data-sources#supported-data-types) および [データフォーマット](https://docs.weatherlayers.com/weatherlayers-gl/data-sources#supported-data-formats) を参照してください。
 
 ## 概要
 - MapLibre GLとDeck.gl、weatherlayers-glを利用して、風向・風速データを地図上に可視化します。
