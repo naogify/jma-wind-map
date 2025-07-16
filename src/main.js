@@ -1,4 +1,4 @@
-import {MapboxOverlay} from '@deck.gl/mapbox';
+import { MapboxOverlay } from '@deck.gl/mapbox';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import './style.css'
@@ -15,6 +15,10 @@ const map = new maplibregl.Map({
 });
 
 map.on('load', async () => {
+
+  map.setProjection({
+    type: 'globe', // Set projection to globe
+  });
 
   const image = await WeatherLayers.loadTextureData('./wind_data.png');
 
