@@ -6,7 +6,7 @@ import * as WeatherLayers from 'weatherlayers-gl';
 
 const map = new maplibregl.Map({
   container: 'map',
-  style: 'https://cdn.geolonia.com/style/geolonia/midnight/ja.json',
+  style: 'https://raw.githubusercontent.com/geolonia/basic-gsiseamlessphoto/main/style.json',
   center: [136.51, 37.88],
   zoom: 4.5,
   attributionControl: {
@@ -27,7 +27,7 @@ map.on('load', async () => {
         maxAge: 10,
         speedFactor: 30,
         width: 2.0,
-        opacity: 0.03,
+        opacity: 0.05,
         image: image,
         bounds: [-180, -90, 180, 90],
         imageUnscale: [-128, 127],
