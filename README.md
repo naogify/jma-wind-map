@@ -2,14 +2,14 @@
 
 ![スクリーンショット 2025-07-16 22 57 07](https://github.com/user-attachments/assets/66ff21e4-4aeb-440f-ba8e-5f74ed26240a)
 
-[気象庁「全球数値予報モデルGPV (GSM全球域)」](https://www.data.jma.go.jp/developer/gpv_sample.html)データ（GRIB2）をRGBエンコーディングしたPNGに変換し、可視化するサンプルです。
+[気象庁「全球数値予報モデルGPV (GSM全球域)」](https://www.data.jma.go.jp/developer/gpv_sample.html)データ（GRIB2）から、風ベクトル（U、V）データを取得し、RGBエンコーディングしたPNGに変換し可視化するサンプルです。
 
 ## 概要
 - MapLibre GLとDeck.gl、weatherlayers-glを利用して、風向・風速データを地図上に可視化します。
 - 風データは[`public/wind_data.png`](public/wind_data.png)を利用しています。
 
 ## 風データPNGのエンコーディングについて
-- 風速データ（U, V成分）をPNG画像にエンコードしています。
+- 風ベクトルデータ（U, V成分）・地上10m をPNG画像にエンコードしています。
 - **RチャンネルにU成分、GチャンネルにV成分**を割り当てています。
 - データが存在しない部分は**Aチャンネル（アルファ）を0**にしています。
 - 詳細仕様は [weatherlayers-gl公式ドキュメント](https://docs.weatherlayers.com/weatherlayers-gl/data-sources#supported-data-types) および [データフォーマット](https://docs.weatherlayers.com/weatherlayers-gl/data-sources#supported-data-formats) を参照してください。
