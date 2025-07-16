@@ -3,7 +3,7 @@
 
 ![スクリーンショット 2025-07-16 22 57 07](https://github.com/user-attachments/assets/66ff21e4-4aeb-440f-ba8e-5f74ed26240a)
 
-[気象庁「全球数値予報モデルGPV (GSM全球域)」](https://www.data.jma.go.jp/developer/gpv_sample.html)データ（GRIB2）から、風ベクトル（U、V）データを取得し、RGBエンコーディングしたPNGに変換し可視化するサンプルです。
+[気象庁「全球数値予報モデルGPV (GSM全球域)」](https://www.data.jma.go.jp/developer/gpv_sample.html)データ（GRIB2）から風ベクトル（U、V）データを取得しRGBエンコーディングしたPNGを可視化するサンプルです。
 
 ## デモURL
 https://naogify.github.io/jma-wind-map/
