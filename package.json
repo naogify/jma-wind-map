@@ -12,6 +12,10 @@
     "vite": "^7.0.4"
   },
   "dependencies": {
-    "maplibre-gl": "^5.6.1"
+    "@deck.gl/extensions": "^9.1.13",
+    "@deck.gl/layers": "^9.1.13",
+    "@deck.gl/mapbox": "^9.1.13",
+    "maplibre-gl": "^5.6.1",
+    "weatherlayers-gl": "^2025.7.2"
   }
 }

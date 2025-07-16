@@ -1,11 +1,38 @@
-import './style.css'
+import {MapboxOverlay} from '@deck.gl/mapbox';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
+import './style.css'
+import * as WeatherLayers from 'weatherlayers-gl';
 
 const map = new maplibregl.Map({
-    container: 'map', // container id
-    style: 'https://cdn.geolonia.com/style/geolonia/basic-v1/ja.json', // style URL
-    center: [0, 0], // starting position [lng, lat]
-    zoom: 1 // starting zoom
+  container: 'map',
+  style: 'https://cdn.geolonia.com/style/geolonia/midnight/ja.json',
+  center: [136.51, 37.88],
+  zoom: 4.5
 });
 
+map.on('load', async () => {
+
+  const image = await WeatherLayers.loadTextureData('http://localhost:5173/data.byte.png');
+  // const image = await WeatherLayers.loadTextureData('http://localhost:5173/wind_data.png');
+
+  const deckOverlay = new MapboxOverlay({
+    interleaved: true,
+    layers: [
+      new WeatherLayers.ParticleLayer({
+        id: 'particle',
+        numParticles: 5000,
+        maxAge: 10,
+        speedFactor: 30,
+        width: 2.0,
+        opacity: 0.05,
+        image: image,
+        imageType: 'VECTOR',
+        bounds: [-180, -90, 180, 90],
+        imageUnscale: [-128, 127],
+      }),
+    ]
+  });
+
+  map.addControl(deckOverlay);
+});
