@@ -19,7 +19,7 @@ https://naogify.github.io/jma-wind-map/
 - 詳細仕様は [weatherlayers-gl公式ドキュメント](https://docs.weatherlayers.com/weatherlayers-gl/data-sources#supported-data-types) および [データフォーマット](https://docs.weatherlayers.com/weatherlayers-gl/data-sources#supported-data-formats) を参照してください。
 
 
-## サンプルコード
+## データ可視化サンプルコード
 
 ```
 map.on('load', async () => {
@@ -50,30 +50,18 @@ map.on('load', async () => {
 
 ## セットアップ
 
-### 1. リポジトリのクローン
 ```bash
-git clone <このリポジトリのURL>
-cd weather-map
-```
-
-### 2. 依存パッケージのインストール
-```bash
+git clone git@github.com:naogify/jma-wind-map.git
+cd jma-wind-map
 npm install
 ```
 
-### 3. 開発サーバーの起動
+### 開発サーバーの起動
 ```bash
 npm run dev
 ```
 
 ブラウザで `http://localhost:5173` を開いて地図を確認できます。
-
-## 使用技術
-- [MapLibre GL JS](https://maplibre.org/)
-- [Deck.gl](https://deck.gl/)
-- [weatherlayers-gl](https://github.com/naogify/weatherlayers-gl)
-- [Vite](https://vitejs.dev/)
-
 
 ## データ出典
 [気象庁「全球数値予報モデルGPV (GSM全球域)」](https://www.data.jma.go.jp/developer/gpv_sample.html)を加工して作成
