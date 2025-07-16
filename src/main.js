@@ -13,8 +13,7 @@ const map = new maplibregl.Map({
 
 map.on('load', async () => {
 
-  const image = await WeatherLayers.loadTextureData('http://localhost:5173/data.byte.png');
-  // const image = await WeatherLayers.loadTextureData('http://localhost:5173/wind_data.png');
+  const image = await WeatherLayers.loadTextureData('./wind_data.png');
 
   const deckOverlay = new MapboxOverlay({
     interleaved: true,
