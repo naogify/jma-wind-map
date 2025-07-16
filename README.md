@@ -11,11 +11,10 @@
 
 ## 概要
 - MapLibre GLとDeck.gl、weatherlayers-glを利用して、風向・風速データを地図上に可視化します。
-- 風データは`public/wind_data.png`を利用しています。
+- 風データは![`public/wind_data.png`](public/wind_data.png)を利用しています。
 - 地図スタイルはGeoloniaのスタイルを使用しています。
 
 ## デモ
-![風データの可視化](public/wind_data.png)
 
 ## セットアップ
 
