@@ -27,7 +27,7 @@ map.on('load', async () => {
         maxAge: 10,
         speedFactor: 30,
         width: 2.0,
-        opacity: 0.02,
+        opacity: 0.03,
         image: image,
         imageType: 'VECTOR',
         bounds: [-180, -90, 180, 90],
