@@ -36,8 +36,8 @@ map.on('load', async () => {
         width: 2.0,
         opacity: 0.03,
         image: image,
-        bounds: [-180, -90, 180, 90],
-        imageUnscale: [-128, 127],
+        bounds: [-180, -90, 180, 90], // 全世界を指定
+        imageUnscale: [-128, 127], // RGBエンコード画像作成時に指定した -scale の値。 grib2uv2png.sh を使っている場合はこのまま。
       }),
     ]
   });
@@ -45,6 +45,8 @@ map.on('load', async () => {
   map.addControl(deckOverlay);
 });
 ```
+
+属性の詳細は [Particle Layer | WeatherLayers](https://docs.weatherlayers.com/weatherlayers-gl/layers/particle-layer#style-properties)を参考にしてください。
 
 ## セットアップ
 
