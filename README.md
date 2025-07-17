@@ -1,6 +1,7 @@
 # jma-wind-map
 
-![スクリーンショット 2025-07-17 0 08 39](https://github.com/user-attachments/assets/119a35c9-32d8-4d9f-b60e-0d35f1cd5c0f)
+
+![スクリーンショット 2025-07-17 0 08 39](https://github.com/user-attachments/assets/b1272c31-792c-46ca-a51c-a1730e27a256)
 
 [気象庁「全球数値予報モデルGPV (GSM全球域)」](https://www.data.jma.go.jp/developer/gpv_sample.html)データ（GRIB2）から風ベクトル（U、V）データを取得しRGBエンコーディングしたPNGを地図上に可視化するサンプルです。
 
