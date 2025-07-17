@@ -8,7 +8,7 @@ const map = new maplibregl.Map({
   container: 'map',
   style: 'https://raw.githubusercontent.com/geolonia/basic-gsiseamlessphoto/main/style.json',
   center: [136.51, 37.88],
-  zoom: 4.5,
+  zoom: 2.8,
   attributionControl: {
     customAttribution: '<a href="https://www.data.jma.go.jp/developer/gpv_sample.html" target="_blank">出典：気象庁「全球数値予報モデルGPV (GSM全球域・日本域)」を加工して作成</a>',
   }
