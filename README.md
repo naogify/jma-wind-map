@@ -14,9 +14,8 @@ https://naogify.github.io/jma-wind-map/
 
 ## 風ベクトルデータのPNGのエンコーディングについて
 - 風ベクトルデータ（U, V成分）・地上10m をPNG画像にエンコードしています。
-- **RチャンネルにU成分、GチャンネルにV成分**を割り当てています。
-- データが存在しない部分は**Aチャンネル（アルファ）を0**にしています。
-- 詳細仕様は [weatherlayers-gl公式ドキュメント](https://docs.weatherlayers.com/weatherlayers-gl/data-sources#supported-data-types) および [データフォーマット](https://docs.weatherlayers.com/weatherlayers-gl/data-sources#supported-data-formats) を参照してください。
+- [weatherlayers-gl公式ドキュメント](https://docs.weatherlayers.com/weatherlayers-gl/data-sources#supported-data-types) および [データフォーマット](https://docs.weatherlayers.com/weatherlayers-gl/data-sources#supported-data-formats) で提唱されている形式でRGBエンコードしています。
+- [grib2 to RGB Encode PNG tools](https://github.com/naogify/grib2png.sh) を使って PNG 画像を作成しています。
 
 
 ## データ可視化サンプルコード
